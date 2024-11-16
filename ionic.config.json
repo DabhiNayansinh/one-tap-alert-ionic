@@ -1,0 +1,7 @@
+{
+  "name": "one-tap-alert",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
