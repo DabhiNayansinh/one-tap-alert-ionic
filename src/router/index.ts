@@ -39,7 +39,7 @@ const routes: Array<RouteRecordRaw> = [
       // { path: '/add', component: AddEditPage },
       { path: '/add', component: Add },
       { path: '/edit/:id', component: Edit },
-      // { path: '/view', component: View },
+      { path: '/view/:id', component: View },
       // { path: '/listing', component: Listing },
       // { path: '/dashboard', component: Dashboard },
 

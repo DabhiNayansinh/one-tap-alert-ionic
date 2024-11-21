@@ -3,13 +3,13 @@
     <ion-page>
         <!-- Header Section -->
         <ion-header>
-                <ion-toolbar color="primary">
-                    <ion-buttons slot="start">
-                        <ion-back-button>go dady</ion-back-button>
-                    </ion-buttons>
-                <ion-title>Add Record</ion-title>
+          <ion-toolbar color="primary">
+            <ion-buttons slot="start">
+                <ion-back-button>go dady</ion-back-button>
+            </ion-buttons>
+              <ion-title>Add Record</ion-title>
               </ion-toolbar>
-            </ion-header>
+          </ion-header>
 
         <!-- Main Content -->
     <ion-content>
@@ -56,15 +56,12 @@
 const router = useRouter();
 
   const submitForm = async () => {
-    console.log(name.value);
-
     try {
       const response = await axios.post('http://127.0.0.1:8000/api/items', {
         name: name.value,
         description: description.value,
       });
 
-      console.log('success',response.data);
       await router.push('dashboard');
     } catch (error) {
       console.error(error);
